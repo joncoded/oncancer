@@ -90,8 +90,8 @@ st.markdown("<button><a href=\"#model-exploration\" style=\"text-decoration:none
 
 st.markdown("## Data collection")
 
-with st.expander("View raw data", expanded=True):
-  st.dataframe(data.head(100))  # Show only first 100 rows
+with st.expander("View raw data (first 100 rows)", expanded=True):
+  st.dataframe(data.head(100))  
 
 # =========================================================
 # DATA UNDERSTANDING
