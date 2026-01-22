@@ -1,6 +1,4 @@
-openpyxl
-scikit-learn
-matplotlib
-pandas
-streamlit
-altair==4.2.2
+streamlit>=1.28.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0

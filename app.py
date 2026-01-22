@@ -73,7 +73,8 @@ st.write("<br><br>", unsafe_allow_html = True)
 # =========================================================
 
 # load file onto data
-data = pd.read_csv(data_path)
+data = pd.read_csv(data_path, encoding='utf-8')
+data = data.fillna('')  # Replace NaN with empty strings
 
 # =========================================================
 # DATA COLLECTION
@@ -90,7 +91,7 @@ st.markdown("<button><a href=\"#model-exploration\" style=\"text-decoration:none
 st.markdown("## Data collection")
 
 with st.expander("View raw data", expanded=True):
-  st.dataframe(data)
+  st.dataframe(data.head(100))  # Show only first 100 rows
 
 # =========================================================
 # DATA UNDERSTANDING
