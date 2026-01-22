@@ -73,7 +73,7 @@ st.write("<br><br>", unsafe_allow_html = True)
 # =========================================================
 
 # load file onto data
-data = pd.read_csv(data_path)
+data = pd.read_csv(data_path, engine='openpyxl')
 
 # =========================================================
 # DATA COLLECTION
