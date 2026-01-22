@@ -63,7 +63,7 @@ def header(content):
             </div>
         </div>""", unsafe_allow_html = True)
 
-header(f"<h1 style=\"font-size:24px\">{page_title}</h1><div style=\"font-size:12px\">{app_tagline}</div>")
+header(f"<h1 style=\"font-size:24px; color: #fff\">{page_title}</h1><div style=\"font-size:12px\">{app_tagline}</div>")
 
 # padding hack
 st.write("<br><br>", unsafe_allow_html = True)
