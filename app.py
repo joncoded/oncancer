@@ -30,7 +30,7 @@ import streamlit as st
 
 # data processing
 import pandas as pd
-data_path = './data/cancer.xlsx'
+data_path = './data/cancer.csv'
 
 page_title = "🎗️ onCancer"
 page_icon = "🎗️"
@@ -73,7 +73,7 @@ st.write("<br><br>", unsafe_allow_html = True)
 # =========================================================
 
 # load file onto data
-data = pd.read_csv(data_path, engine='openpyxl')
+data = pd.read_csv(data_path)
 
 # =========================================================
 # DATA COLLECTION
